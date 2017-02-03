@@ -1,2 +1,0 @@
-Simple PHP script that find relation for a phaidra object with alert
-

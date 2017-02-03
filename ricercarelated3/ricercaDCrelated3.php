@@ -1,8 +1,6 @@
 
 <?php
 
-
-
 $dcrelated = $_POST['dcrelated'];
 $curl_handle=curl_init();
 if ($curl_handle === null) {
@@ -29,30 +27,34 @@ if (strstr($box, '"{"alerts":[],"hits":"0","objects":[],"status":200}"'))
 {
   echo "l'oggetto non ha relazioni con altri ";
 }else{
-  echo $box;
+  $testo=$box;
+  preg_match_all("(o:(.*?)pos)", $testo , $risultato);
+ 
+
   
+  echo $risultato[1][0];
+  echo $risultato[1][1];
+  echo $risultato[1][2];
+  echo $risultato[1][3];
+  echo $risultato[1][4];
+  echo $risultato[1][5];
+  echo $risultato[1][6];
+  echo $risultato[1][7];
+  echo $risultato[1][8];
+  echo $risultato[1][9];
+  
+
+  
+
+  for ($row = 0; $row < 10; $row++) {
+  
+  for ($col = 0; $col < 10; $col++) {
+    echo "<li>".$risultato[$row][$col]."</li>";
+  }
+  echo "</ul>";
+}
   
 }
-
-
-
-
-
-
-
-
-?>
-   
-
-
-
-
-
-
-
-
-
-
 
 
 

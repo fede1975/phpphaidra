@@ -1,0 +1,10 @@
+
+
+
+instructions:
+Simply open the form
+The php-engine give you (if present ) the relation between objects after downloading it in your current directory
+
+
+required:
+apache, php etc. installed

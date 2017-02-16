@@ -1,0 +1,49 @@
+
+<link rel="stylesheet" type="text/css" href="https://phaidra-static.cab.unipd.it/stylesheets/css/unipdstyle.css">
+
+<form method="post" action="bufferscheda.php">
+  
+
+  
+  <select name="collezione">
+  <option value="erbario_marsili">erbario-marsili</option>
+  <option value="descrizioni_orto_botanico">orto botanico</option>
+  <option value="ca_foscari_archivio_gino_luzzatto">ca foscari archivio gino luzzato</option>
+  <option value="ladag">ladag</option>
+  <option value="belf">belf</option>
+  <option value="modelli_ponti">modelli_ponti</option>
+  <option value="pergamene_s_maria_carceri">pergamene_s_maria_carceri</option>
+  <option value="iuav_fondo_labo">iuav_fondo_labo</option>
+  <option value="ca_foscari_orienta_insegna">ca_foscari_orienta_insegna</option>
+  <option value="musei_settecento_a_padova">musei_settecento_a_padova</option>
+  <option value="iuav_archivio_iconografico">iuav_archivio_iconografico</option>
+  <option value="psicologia_a_padova">psicologia_a_padova</option>
+  <option value="ca_foscari_eventi">ca_foscari_eventi</option>
+  <option value="iconoteca_geologi">iconoteca_geologi</option>
+  <option value="pinali_antica_ex_libri">pinali_antica_ex_libri</option>
+  <option value="tavole_parietali_del_museo_botanico">tavole_parietali_del_museo_botanico</option>
+  <option value="casrec_stampa_clandestina">casrec_stampa_clandestina</option>
+  <option value="ca_foscari_fondi_speciali"></option>
+ 
+  <?php  
+	for ($x = 0; $x <= 10; $x++) {
+	  echo "<option value=\"".$x."\">".$x."\</option>";
+	}
+	?>  
+  
+  
+ 
+  </select>
+  
+  <br>
+
+ 
+
+
+  
+  
+
+  </select><br>
+  <input type="submit" name="invia" value="Invia i dati">
+  
+  

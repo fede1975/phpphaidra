@@ -1,0 +1,34 @@
+
+<link rel="stylesheet" type="text/css" href="https://phaidra-static.cab.unipd.it/stylesheets/css/unipdstyle.css">
+
+<form method="post" action="bufferscheda.php">
+  
+
+ Scegli l'oggetto digitale <br>
+  <select name="collezione">
+  <option value="61439">61439</option>
+  <option value="61435">61435</option>
+  <option value="61435">61434</option>
+ 
+  <?php  
+	for ($x = 0; $x <= 10; $x++) {
+	  echo "<option value=\"".$x."\">".$x."\</option>";
+	}
+	?>  
+  
+  
+ 
+  </select>
+  
+  <br>
+
+ 
+
+
+  
+  
+
+  </select><br>
+  <input type="submit" name="invia" value="Invia i dati">
+  
+  

@@ -1,0 +1,2 @@
+Slider you can insert every-where: it is based on nivo slider after calling PHAIDRA with a form
+
